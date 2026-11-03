@@ -5,6 +5,8 @@
 [![Layouts: JIS / UK / US / FR](https://img.shields.io/badge/Layouts-JIS%20%7C%20UK%20%7C%20US%20%7C%20FR-green.svg)](#-対応キーボード配列)
 [![License: BYOF Safe](https://img.shields.io/badge/License-BYOF%20Safe-orange.svg)](#-安全設計著作権ポリシー)
 
+<img src="./Images/Image1.jpg" title="" alt="Image1.jpg" width="809" />
+
 Lenovo ThinkPad X12 Detachable Gen 1 の外付けフォリオキーボードのキー配置や機能を  
 視覚的にカスタマイズできる、WindowsネイティブのWPF GUIツールです。  
 直感的な操作画面で、キーの入れ替え（Fn⇔Ctrl等）や無効化、定番プリセット適用、  
@@ -50,8 +52,6 @@ Windows 11と、UK版キーボード(FRU:5M11A37017)にて動作確認を行な�
 ## 🌟 主な特長
 
 
-
-<img src="./Images/Image1.jpg" title="" alt="Image1.jpg" width="809" />
 
 <img src="./Images/Image2.jpg" title="" alt="Image2.jpg" width="810" />
 
