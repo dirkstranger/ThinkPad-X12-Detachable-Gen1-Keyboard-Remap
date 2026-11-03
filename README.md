@@ -52,7 +52,7 @@ UK版キーボード(FRU:5M11A37017)にて動作確認を行なっています�
 
 
 
-<img src=".Images/Image1.jpg" title="" alt="Image1.jpg" width="809" />
+<img src="./Images/Image1.jpg" title="" alt="Image1.jpg" width="809" />
 
 <img src="./Images/Image2.jpg" title="" alt="Image2.jpg" width="810" />
 
