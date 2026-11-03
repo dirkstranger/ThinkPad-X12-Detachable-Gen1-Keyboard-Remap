@@ -34,7 +34,7 @@ Windows 11と、UK版キーボード(FRU:5M11A37017)にて動作確認を行な�
 | **公式配布ページURL**      | [Lenovo サポート　ダウンロードページ](https://pcsupport.lenovo.com/jp/ja/products/laptops-and-netbooks/thinkpad-x-series-laptops/thinkpad-x12-detachable-gen-1-type-20uw-20uv/downloads/ds549257-folio-case-keyboard-firmware-for-windows-10-version-1903-or-later-thinkpad-l13-gen-2-l13-yoga-gen-2) |
 
 ### 📂 ファイルの展開・配置ステップ
-1. Release からZipファイルをダウンロードして展開します。
+1. Releases からZipファイルをダウンロードして展開します。
 3. 上記のレノボ公式サイトからダウンロードした `r1gkb08w_v2.exe` を起動します。
 4. 使用許諾に同意後、**必ず「展開のみ」を選択** して「次へ」をクリックします。
 5. 指定した宛先フォルダーに自己展開ローダーである **`KB-ISP.exe`** が展開されます。
