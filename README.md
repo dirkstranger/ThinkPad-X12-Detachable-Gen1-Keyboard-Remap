@@ -34,13 +34,13 @@ Windows 11と、UK版キーボード(FRU:5M11A37017)にて動作確認を行な�
 | **公式配布ページURL**      | [Lenovo サポート　ダウンロードページ](https://pcsupport.lenovo.com/jp/ja/products/laptops-and-netbooks/thinkpad-x-series-laptops/thinkpad-x12-detachable-gen-1-type-20uw-20uv/downloads/ds549257-folio-case-keyboard-firmware-for-windows-10-version-1903-or-later-thinkpad-l13-gen-2-l13-yoga-gen-2) |
 
 ### 📂 ファイルの展開・配置ステップ
-
-1. 公式サイトからダウンロードした `r1gkb08w_v2.exe` を起動します。
-2. 使用許諾に同意後、**必ず「展開のみ」を選択** して「次へ」をクリックします。
-3. 指定した宛先フォルダーに自己展開ローダーである **`KB-ISP.exe`** が展開されます。
-4. **`KB-ISP.exe` を一度ダブルクリックして起動** します（起動すると内部リソースから同フォルダー内に **`FW` フォルダ** および　　
+1. Release からZipファイルをダウンロードして展開します。
+3. 上記のレノボ公式サイトからダウンロードした `r1gkb08w_v2.exe` を起動します。
+4. 使用許諾に同意後、**必ず「展開のみ」を選択** して「次へ」をクリックします。
+5. 指定した宛先フォルダーに自己展開ローダーである **`KB-ISP.exe`** が展開されます。
+6. 一度**`KB-ISP.exe` をダブルクリックして起動** します（起動すると内部リソースから同フォルダー内に **`FW` フォルダ** および　　
    `UpdateKeyboard.exe` が自動展開されます。起動確認後、すぐにウィンドウを閉じて終了してください）。
-6. 展開された以下のファイル・フォルダーを、本ツールのフォルダー直下に配置します：
+7. 展開された以下のファイル・フォルダーを、本ツールのフォルダー直下に配置します：
    - **`KB-ISP.exe`**（ツール直下へ）
    - **`UpdateKeyboard.exe`**（ツール直下へ）
    - **`FW/` フォルダ**（`Hera_KB_APROM_v39_UT0N.bin` および `command.exe` を含むフォルダーごとツール直下へ）
