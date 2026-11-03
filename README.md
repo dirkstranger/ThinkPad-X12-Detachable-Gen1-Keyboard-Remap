@@ -98,7 +98,6 @@ UK版キーボード(FRU:5M11A37017)にて動作確認を行なっています�
 .
 ├── KeyRemapTool.bat              # ダブルクリック起動用バッチ
 ├── KeyRemapTool.ps1              # WPF GUIスクリプト本体
-├── .gitignore                    # Git除外設定（公式バイナリ・一時ファイル等）
 └── README.md                     # 本ドキュメント
 ```
 
