@@ -8,7 +8,8 @@
 <img src="./Images/Image1.jpg" title="" alt="Image1.jpg" width="809" />
 
 Lenovo ThinkPad X12 Detachable Gen 1 の外付けフォリオキーボードのキー配置や機能を  
-視覚的にカスタマイズできる、WindowsネイティブのWPF GUIツールです。  
+視覚的にカスタマイズし、レノボ公式のキーボード用ファームウェアにパッチ適用できる、  
+WindowsネイティブのWPF GUIツールです。  
 直感的な操作画面で、キーの入れ替え（Fn⇔Ctrl等）や無効化、定番プリセット適用、  
 再起動抑止やバージョンチェック無効化パッチをワンクリックで実行できます。
 
