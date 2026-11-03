@@ -1,35 +1,38 @@
-# ThinkPad X12 Detachable Gen 1 キーボード用ファームウェア キー入れ替え・無効化ツール (WPF版)
+## ThinkPad X12 Detachable Gen 1 キーボード用ファームウェア キー入れ替え・無効化ツール
 
 [![Platform: Windows 10/11](https://img.shields.io/badge/Platform-Windows%2010%20%2F%2011-blue.svg)](https://microsoft.com)
 [![PowerShell: 5.1+](https://img.shields.io/badge/PowerShell-5.1%2B-blue.svg)](https://microsoft.com)
 [![Layouts: JIS / UK / US / FR](https://img.shields.io/badge/Layouts-JIS%20%7C%20UK%20%7C%20US%20%7C%20FR-green.svg)](#-対応キーボード配列)
 [![License: BYOF Safe](https://img.shields.io/badge/License-BYOF%20Safe-orange.svg)](#-安全設計著作権ポリシー)
 
-Lenovo ThinkPad X12 Detachable Gen 1 の外付けフォリオキーボード用ファームウェア（`Hera_KB_APROM_v39_UT0N.bin`）および公式書き込みツール（`KB-ISP.exe`）を視覚的にカスタマイズできる、WindowsネイティブのWPF GUIツールです。
+Lenovo ThinkPad X12 Detachable Gen 1 の外付けフォリオキーボード用ファームウェア（`Hera_KB_APROM_v39_UT0N.bin`）および  
+公式書き込みツール（`KB-ISP.exe`）を視覚的にカスタマイズできる、WindowsネイティブのWPF GUIツールです。  
+直感的な操作画面で、キーの入れ替え（Fn⇔Ctrl等）や無効化、定番プリセット適用、再起動抑止やバージョンチェック無効化パッチを  
+ワンクリックで実行できます。
 
-Windows 11 Fluent Design（角丸カードスタイル、`BIZ UDPGothic`）に準拠した直感的な操作画面で、キーの入れ替え（Fn⇔Ctrl等）や無効化、定番プリセット適用、再起動抑止やバージョンチェック無効化パッチをワンクリックで実行できます。
-
-> ⚠️ **著作権保護について (BYOF: Bring Your Own Firmware方式)**
-> 本リポジトリには Lenovo および Nuvoton の公式著作物（バイナリファイル本体や公式書き込みツールEXE等）は **一切含まれていません**。
-> 本ツールをご利用の際は、以下の手順に従ってLenovo公式サイトから公式ファームウェアを展開・配置してください。
+> ⚠️ **ご注意**
+>
+> 本リポジトリには、キーボードのファームウェアや書換ツールは含まれていません。
 
 ---
 
 ## 🏢 公式ファームウェア・書き込みツールの入手手順
+キーボードのファームウェアとその書換ツールは、以下のリンク（レノボのサポートページ）から入手してください。
 
 | 項目 | 内容 |
 | :--- | :--- |
 | **更新ツールの名称** | **フォリオ ケース キーボード ファームウェア** (Folio case Keyboard FW) |
 | **ダウンロードファイル名** | `r1gkb08w_v2.exe` (約 4.0 MB) |
 | **バージョン** | **3339** (リリース日: **2024年8月8日**) |
-| **公式配布ページURL** | [Lenovo サポート公式ダウンロードページ](https://pcsupport.lenovo.com/jp/ja/products/laptops-and-netbooks/thinkpad-x-series-laptops/thinkpad-x12-detachable-gen-1-type-20uw-20uv/downloads/ds549257-folio-case-keyboard-firmware-for-windows-10-version-1903-or-later-thinkpad-l13-gen-2-l13-yoga-gen-2) |
+| **公式配布ページURL** | [Lenovo サポート　ダウンロードページ](https://pcsupport.lenovo.com/jp/ja/products/laptops-and-netbooks/thinkpad-x-series-laptops/thinkpad-x12-detachable-gen-1-type-20uw-20uv/downloads/ds549257-folio-case-keyboard-firmware-for-windows-10-version-1903-or-later-thinkpad-l13-gen-2-l13-yoga-gen-2) |
 
 ### 📂 ファイルの展開・配置ステップ
 1. 公式サイトからダウンロードした `r1gkb08w_v2.exe` を起動します。
-2. 使用許諾に同意後、**【最重要】必ず「◉ 展開のみ」を選択** して「次へ」をクリックします（※「インストール」を選ぶと直ちに純正書き換えが始まってしまいます）。
+2. 使用許諾に同意後、**必ず「展開のみ」を選択** して「次へ」をクリックします。
 3. 指定した宛先フォルダーに自己展開ローダーである **`KB-ISP.exe`** が展開されます。
-4. **`KB-ISP.exe` を一度ダブルクリックして起動** します（起動すると内部リソースから同フォルダー内に **`FW` フォルダ** および `UpdateKeyboard.exe` が自動展開されます。起動確認後、すぐにウィンドウを閉じて終了してください）。
-5. 展開された以下のファイル・フォルダーを、本ツールのフォルダー直下に配置します：
+4. **`KB-ISP.exe` を一度ダブルクリックして起動** します（起動すると内部リソースから同フォルダー内に **`FW` フォルダ** および　　
+`UpdateKeyboard.exe` が自動展開されます。起動確認後、すぐにウィンドウを閉じて終了してください）。
+6. 展開された以下のファイル・フォルダーを、本ツールのフォルダー直下に配置します：
    - **`KB-ISP.exe`**（ツール直下へ）
    - **`UpdateKeyboard.exe`**（ツール直下へ）
    - **`FW/` フォルダ**（`Hera_KB_APROM_v39_UT0N.bin` および `command.exe` を含むフォルダーごとツール直下へ）
@@ -39,18 +42,17 @@ Windows 11 Fluent Design（角丸カードスタイル、`BIZ UDPGothic`）に�
 ## 🌟 主な特長
 
 1. **実機ビジュアルキーボードによる直感的な編集**
-   - 実機キーの形状（角丸逆L字Enter、TrackPointくびれ等）や刻印を正確に描画。
    - 変更したいキーをクリックして、別のキーを割り当てたり、他のキーとスワップ（入れ替え）したり、ワンクリックで無効化可能。
 2. **4言語配列（JIS / UK / US / FR）完全対応**
-   - 右上のプルダウンから、いつでも瞬時に言語配列を切り替え可能。
+   - 右上のプルダウンから言語配列を切り替え可能。
    - 各言語向けに最適化された定番プリセットボタンを搭載。
 3. **Fnレイヤー・特殊ホットキー編集（タブ2）**
-   - Fn+4（スリープ）や各種Fnキー組み合わせ（ROMオフセット 0x5B50 / 0x5BD0）の動作を個別に編集・無効化可能。
+   - Fn+4（スリープ）や各種Fnキー組み合わせの動作を個別に編集・無効化可能。
 4. **KB-ISP.exe 制限解除パッチ機能（タブ3）**
-   - **強制再起動抑止**: 書き込み完了後のPC強制再起動（`shutdown -f -r -t 0`）を無効化。
+   - **強制再起動抑止**: 書き込み完了後のPC強制再起動を無効化。
    - **電源チェック解除**: AC電源未接続やバッテリー25%未満時の書き込みブロックをスキップ。
    - **バージョンチェック解除**: 一度書き換えた後、2回目以降の書き込み時に発生する「*A newer version is currently installed.*」エラーを解消し、何度でも自由に再書き込み可能。
-5. **安心の自動バックアップ＆復元機能**
+5. **自動バックアップ＆復元機能**
    - 初回起動時に、純正ファームウェアおよび `KB-ISP.exe` の原本バックアップ（`.orig.bak`）を自動作成。
    - 「↺ すべて純正初期状態に復元」ボタンから、いつでもワンクリックで工場出荷時の純正状態へ戻せます。
 
@@ -78,7 +80,6 @@ Windows 11 Fluent Design（角丸カードスタイル、`BIZ UDPGothic`）に�
 .
 ├── KeyRemapTool.bat              # ダブルクリック起動用バッチ
 ├── KeyRemapTool.ps1              # WPF GUIスクリプト本体
-├── ファームウェアDL先(Ver3339).url # Lenovo公式配布ページへのショートカット
 ├── .gitignore                    # Git除外設定（公式バイナリ・一時ファイル等）
 └── README.md                     # 本ドキュメント
 ```
