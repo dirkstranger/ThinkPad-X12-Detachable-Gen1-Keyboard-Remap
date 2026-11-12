@@ -535,6 +535,100 @@ $Layout_FR_Body = @(
     @{Id='Right'; Label='→'; Type='Half'; X=888; Y=331; W=62; H=31; Col=9; Row=7; Text='→'; DuplicateCells=@()}
 )
 
+# --- 5. カナダ・フランス語 (CA / Canadian Multilingual Standard QWERTY 全84キー: 実機写真完全準拠) ---
+$Layout_CA_FnKeys = @(
+    @{Id='Esc'; Label='Esc'; Type='FnRow'; X=10; Y=10; W=68; H=36; Col=0; Row=5; TL='🔒↻'; BL='FnLock'; Icon=''; Sub=''; DuplicateCells=@()}
+    @{Id='F1'; Label='F1'; Type='FnRow'; X=90; Y=10; W=50; H=36; Col=1; Row=0; TL=''; BL=''; Icon='🔇'; Sub='F1'; DuplicateCells=@()}
+    @{Id='F2'; Label='F2'; Type='FnRow'; X=143; Y=10; W=50; H=36; Col=2; Row=0; TL=''; BL=''; Icon='🔉-'; Sub='F2'; DuplicateCells=@()}
+    @{Id='F3'; Label='F3'; Type='FnRow'; X=196; Y=10; W=50; H=36; Col=2; Row=3; TL=''; BL=''; Icon='🔊+'; Sub='F3'; DuplicateCells=@()}
+    @{Id='F4'; Label='F4'; Type='FnRow'; X=249; Y=10; W=50; H=36; Col=2; Row=5; TL=''; BL=''; Icon='🎤×'; Sub='F4'; DuplicateCells=@()}
+    @{Id='F5'; Label='F5'; Type='FnRow'; X=310; Y=10; W=50; H=36; Col=8; Row=5; TL=''; BL=''; Icon='🔅-'; Sub='F5'; DuplicateCells=@()}
+    @{Id='F6'; Label='F6'; Type='FnRow'; X=363; Y=10; W=50; H=36; Col=5; Row=5; TL=''; BL=''; Icon='🔆+'; Sub='F6'; DuplicateCells=@()}
+    @{Id='F7'; Label='F7'; Type='FnRow'; X=416; Y=10; W=50; H=36; Col=6; Row=3; TL=''; BL=''; Icon='🖥'; Sub='F7'; DuplicateCells=@()}
+    @{Id='F8'; Label='F8'; Type='FnRow'; X=469; Y=10; W=50; H=36; Col=6; Row=0; TL=''; BL=''; Icon='✂'; Sub='F8'; DuplicateCells=@()}
+    @{Id='F9'; Label='F9'; Type='FnRow'; X=530; Y=10; W=50; H=36; Col=8; Row=0; TL=''; BL=''; Icon='🗨'; Sub='F9'; DuplicateCells=@()}
+    @{Id='F10'; Label='F10'; Type='FnRow'; X=583; Y=10; W=50; H=36; Col=8; Row=1; TL=''; BL=''; Icon='📞'; Sub='F10'; DuplicateCells=@()}
+    @{Id='F11'; Label='F11'; Type='FnRow'; X=636; Y=10; W=50; H=36; Col=10; Row=1; TL=''; BL=''; Icon='📵'; Sub='F11'; DuplicateCells=@()}
+    @{Id='F12'; Label='F12'; Type='FnRow'; X=689; Y=10; W=50; H=36; Col=9; Row=1; TL=''; BL=''; Icon='☆'; Sub='F12'; DuplicateCells=@()}
+    @{Id='Home'; Label='↖ (Home)'; Type='FnRow'; X=750; Y=10; W=56; H=36; Col=12; Row=0; TL=''; BL=''; Icon='↖'; Sub=''; DuplicateCells=@()}
+    @{Id='End'; Label='↘ (End/⎀)'; Type='FnRow'; X=809; Y=10; W=56; H=36; Col=12; Row=1; TL=''; BL=''; Icon='↘'; Sub='⎀'; DuplicateCells=@()}
+    @{Id='Del'; Label='彡 (Delete)'; Type='FnRow'; X=868; Y=10; W=82; H=36; Col=10; Row=0; TL=''; BL=''; Icon='彡'; Sub=''; DuplicateCells=@()}
+)
+
+$Layout_CA_Body = @(
+    # 第2段: 数字列 (14キー)
+    @{Id='SlashBS'; Label='\ > |'; Type='Std'; X=10; Y=52; W=48; H=56; Col=0; Row=0; LeftList=@([char]0x005C,'>','|'); TR='-'; DuplicateCells=@()}
+    @{Id='K1'; Label='1 (! ¡ ¹)'; Type='Std'; X=62; Y=52; W=62; H=56; Col=0; Row=1; TL='!'; TR='¡'; BL='1'; BR='¹'; DuplicateCells=@()}
+    @{Id='K2'; Label='2 (@ ²)'; Type='Std'; X=128; Y=52; W=62; H=56; Col=1; Row=1; TL='@'; BL='2'; BR='²'; DuplicateCells=@()}
+    @{Id='K3'; Label='3 (# £ ³)'; Type='Std'; X=194; Y=52; W=62; H=56; Col=2; Row=1; TL='#'; TR='£'; BL='3'; BR='³'; DuplicateCells=@()}
+    @{Id='K4'; Label='4 ($ ¤ ¼)'; Type='Std'; X=260; Y=52; W=62; H=56; Col=3; Row=1; TL='$'; TR='¤'; BL='4'; BR='¼'; DuplicateCells=@()}
+    @{Id='K5'; Label='5 (% ½)'; Type='Std'; X=326; Y=52; W=62; H=56; Col=3; Row=0; TL='%'; BL='5'; BR='½'; DuplicateCells=@()}
+    @{Id='K6'; Label='6 (? ¾)'; Type='Std'; X=392; Y=52; W=62; H=56; Col=4; Row=0; TL='?'; BL='6'; BR='¾'; DuplicateCells=@()}
+    @{Id='K7'; Label='7 (& {)'; Type='Std'; X=458; Y=52; W=62; H=56; Col=4; Row=1; LeftList=@('&','7','{'); DuplicateCells=@()}
+    @{Id='K8'; Label='8 (* })'; Type='Std'; X=524; Y=52; W=62; H=56; Col=5; Row=1; LeftList=@('*','8','}'); DuplicateCells=@()}
+    @{Id='K9'; Label='9 (( [ ±)'; Type='Std'; X=590; Y=52; W=62; H=56; Col=6; Row=1; LeftList=@('(','9','['); TR='±'; DuplicateCells=@()}
+    @{Id='K0'; Label='0 () ])'; Type='Std'; X=656; Y=52; W=62; H=56; Col=7; Row=1; LeftList=@(')','0',']'); DuplicateCells=@()}
+    @{Id='Minus'; Label='- (_ ¿)'; Type='Std'; X=722; Y=52; W=56; H=56; Col=7; Row=0; LeftList=@('¯','-'); TR='¿'; DuplicateCells=@()}
+    @{Id='Equal'; Label='= (+ ¬ ¸)'; Type='Std'; X=782; Y=52; W=56; H=56; Col=5; Row=0; LeftList=@('+','=','¬'); BR='¸'; DuplicateCells=@()}
+    @{Id='BS'; Label='Backspace'; Type='Mod'; X=842; Y=52; W=108; H=56; Col=8; Row=3; Text='⌫'; DuplicateCells=@()}
+
+    # 第3段: QWERTY列 (13キー + Enter)
+    @{Id='Tab'; Label='Tab'; Type='Mod'; X=10; Y=113; W=74; H=56; Col=0; Row=3; Text='⇥'; DuplicateCells=@()}
+    @{Id='Q'; Label='Q'; Type='Std'; X=88; Y=113; W=62; H=56; Col=0; Row=2; Text='Q'; DuplicateCells=@()}
+    @{Id='W'; Label='W'; Type='Std'; X=154; Y=113; W=62; H=56; Col=1; Row=2; Text='W'; DuplicateCells=@()}
+    @{Id='E'; Label='E (Œ)'; Type='Std'; X=220; Y=113; W=62; H=56; Col=2; Row=2; TL='E'; TR='Œ'; DuplicateCells=@()}
+    @{Id='R'; Label='R (® ¶)'; Type='Std'; X=286; Y=113; W=62; H=56; Col=3; Row=2; TL='R'; TR='®'; BR='¶'; DuplicateCells=@()}
+    @{Id='T'; Label='T'; Type='Std'; X=352; Y=113; W=62; H=56; Col=4; Row=2; Text='T'; DuplicateCells=@()}
+    @{Id='Y'; Label='Y (¥)'; Type='Std'; X=418; Y=113; W=62; H=56; Col=4; Row=3; TL='Y'; TR='¥'; DuplicateCells=@()}
+    @{Id='U'; Label='U'; Type='Std'; X=484; Y=113; W=62; H=56; Col=3; Row=3; Text='U'; DuplicateCells=@()}
+    @{Id='I'; Label='I'; Type='Std'; X=550; Y=113; W=62; H=56; Col=5; Row=2; Text='I'; DuplicateCells=@()}
+    @{Id='O'; Label='O (Ø)'; Type='Std'; X=616; Y=113; W=62; H=56; Col=6; Row=2; TL='O'; TR='Ø'; DuplicateCells=@()}
+    @{Id='P'; Label='P (Þ)'; Type='Std'; X=682; Y=113; W=62; H=56; Col=7; Row=2; TL='P'; TR='Þ'; DuplicateCells=@()}
+    @{Id='Circumflex'; Label='¨ ^ ˋ (°)'; Type='Std'; X=748; Y=113; W=56; H=56; Col=7; Row=3; LeftList=@('¨','^','ˋ'); TR='°'; DuplicateCells=@()}
+    @{Id='Cedilla'; Label='Ç ~ (- ~)'; Type='Std'; X=808; Y=113; W=54; H=56; Col=5; Row=3; LeftList=@('Ç','~'); RightList=@('-','~'); DuplicateCells=@()}
+    @{Id='Enter'; Label='Enter'; Type='EnterISO'; X=866; Y=113; W=84; H=117; Col=8; Row=6; Text='↵'; NotchW=16; NotchH=58; DuplicateCells=@()}
+
+    # 第4段: ASDF列 (12キー)
+    @{Id='Caps'; Label='CapsLock'; Type='Mod'; X=10; Y=174; W=84; H=56; Col=1; Row=3; Text='⇪'; DuplicateCells=@()}
+    @{Id='A'; Label='A (Æ)'; Type='Std'; X=98; Y=174; W=62; H=56; Col=0; Row=4; TL='A'; TR='Æ'; DuplicateCells=@()}
+    @{Id='S'; Label='S (§ ß)'; Type='Std'; X=164; Y=174; W=62; H=56; Col=1; Row=4; TL='S'; TR='§'; BR='ß'; DuplicateCells=@()}
+    @{Id='D'; Label='D (Ð)'; Type='Std'; X=230; Y=174; W=62; H=56; Col=2; Row=4; TL='D'; TR='Ð'; DuplicateCells=@()}
+    @{Id='F'; Label='F (ª)'; Type='Std'; X=296; Y=174; W=62; H=56; Col=3; Row=4; TL='F'; TR='ª'; DuplicateCells=@()}
+    @{Id='G'; Label='G'; Type='Std'; X=362; Y=174; W=62; H=56; Col=3; Row=5; Text='G'; DuplicateCells=@()}
+    @{Id='H'; Label='H'; Type='Std'; X=428; Y=174; W=62; H=56; Col=4; Row=5; Text='H'; DuplicateCells=@()}
+    @{Id='J'; Label='J'; Type='Std'; X=494; Y=174; W=62; H=56; Col=4; Row=4; Text='J'; DuplicateCells=@()}
+    @{Id='K'; Label='K'; Type='Std'; X=560; Y=174; W=62; H=56; Col=5; Row=4; Text='K'; DuplicateCells=@()}
+    @{Id='L'; Label='L'; Type='Std'; X=626; Y=174; W=62; H=56; Col=6; Row=4; Text='L'; DuplicateCells=@()}
+    @{Id='Semicolon'; Label=': ; ° (/)'; Type='Std'; X=692; Y=174; W=56; H=56; Col=7; Row=4; LeftList=@(': ',';','°'); MR='/'; DuplicateCells=@()}
+    @{Id='ÈGrave'; Label='È'; Type='Std'; X=752; Y=174; W=56; H=56; Col=7; Row=5; Text='È'; DuplicateCells=@()}
+    @{Id='ÀGrave'; Label='À'; Type='Std'; X=812; Y=174; W=66; H=56; Col=7; Row=6; Text='À'; DuplicateCells=@()}
+
+    # 第5段: ZXCV列 (13キー)
+    @{Id='LShift'; Label='左Shift'; Type='Mod'; X=10; Y=235; W=66; H=56; Col=14; Row=3; Text='⇧'; DuplicateCells=@()}
+    @{Id='IsoUGrave'; Label="Ù '"; Type='Std'; X=80; Y=235; W=58; H=56; Col=1; Row=5; LeftText='Ù'; RightText="'"; DuplicateCells=@()}
+    @{Id='Z'; Label='Z («)'; Type='Std'; X=142; Y=235; W=62; H=56; Col=0; Row=6; TopText='Z'; BottomText='«'; DuplicateCells=@()}
+    @{Id='X'; Label='X (»)'; Type='Std'; X=208; Y=235; W=62; H=56; Col=1; Row=6; TopText='X'; BottomText='»'; DuplicateCells=@()}
+    @{Id='C'; Label='C (© ¢)'; Type='Std'; X=274; Y=235; W=62; H=56; Col=2; Row=6; TL='C'; TR='©'; BR='¢'; DuplicateCells=@()}
+    @{Id='V'; Label='V'; Type='Std'; X=340; Y=235; W=62; H=56; Col=3; Row=6; Text='V'; DuplicateCells=@()}
+    @{Id='B'; Label='B'; Type='Std'; X=406; Y=235; W=62; H=56; Col=3; Row=7; TL='B'; DuplicateCells=@()}
+    @{Id='N'; Label='N'; Type='Std'; X=472; Y=235; W=62; H=56; Col=4; Row=7; Text='N'; DuplicateCells=@()}
+    @{Id='M'; Label='M (Ω µ)'; Type='Std'; X=538; Y=235; W=62; H=56; Col=4; Row=6; TL='M'; TR=[char]0x03A9; BR=[char]0x03BC; DuplicateCells=@()}
+    @{Id='Comma'; Label="', < (×)"; Type='Std'; X=604; Y=235; W=62; H=56; Col=5; Row=6; LeftList=@("'",',','<'); TR='×'; DuplicateCells=@()}
+    @{Id='Period'; Label='". > (÷)'; Type='Std'; X=670; Y=235; W=62; H=56; Col=6; Row=6; LeftList=@('"', '.', '>'); TR='÷'; DuplicateCells=@()}
+    @{Id='ÉAcute'; Label='É (´)'; Type='Std'; X=736; Y=235; W=58; H=56; Col=7; Row=7; TopText='É'; BottomText='´'; DuplicateCells=@()}
+    @{Id='RShift'; Label='右Shift'; Type='Mod'; X=798; Y=235; W=152; H=56; Col=14; Row=6; Text='⇧'; DuplicateCells=@()}
+
+    # 第6段: 最下段 (8キー)
+    @{Id='Fn'; Label='Fn'; Type='Mod'; X=10; Y=296; W=54; H=58; Col=1; Row=7; Text='Fn'; DuplicateCells=@()}
+    @{Id='LCtrl'; Label='⎈ (Ctrl)'; Type='Mod'; X=68; Y=296; W=68; H=58; Col=15; Row=0; Text='⎈'; DuplicateCells=@()}
+    @{Id='LWin'; Label='Win'; Type='Mod'; X=140; Y=296; W=58; H=58; Col=9; Row=3; Text='⊞'; DuplicateCells=@(@{Col=12;Row=3})}
+    @{Id='LAlt'; Label='⎇ (Alt)'; Type='Mod'; X=202; Y=296; W=58; H=58; Col=13; Row=5; Text='⎇'; DuplicateCells=@()}
+    @{Id='Space'; Label='Space'; Type='Mod'; X=264; Y=296; W=312; H=58; Col=8; Row=7; BL='☀'; DuplicateCells=@()}
+    @{Id='RAlt'; Label='⇮ (AltGr)'; Type='Mod'; X=580; Y=296; W=54; H=58; Col=13; Row=7; Text='⇮'; DuplicateCells=@()}
+    @{Id='PrtSc'; Label='PrtSc'; Type='Mod'; X=638; Y=296; W=54; H=58; Col=13; Row=1; TL='📷'; BL='✂'; DuplicateCells=@(@{Col=12;Row=6})}
+    @{Id='RCtrl'; Label='⇨ (Ctrl)'; Type='Mod'; X=696; Y=296; W=54; H=58; Col=15; Row=6; Text='⇨'; DuplicateCells=@()}
+)
+
 # 配列管理
 $Global:ActiveLayout = "JIS"
 
@@ -543,6 +637,7 @@ function Get-ActiveVisualKeys() {
         "UK" { return ($CommonFnKeys + $Layout_UK_Body + $CommonNavKeys) }
         "US" { return ($CommonFnKeys + $Layout_US_Body + $CommonNavKeys) }
         "FR" { return ($Layout_FR_FnKeys + $Layout_FR_Body + $CommonNavKeys) }
+        "CA" { return ($Layout_CA_FnKeys + $Layout_CA_Body + $CommonNavKeys) }
         default { return ($CommonFnKeys + $Layout_JIS_Body + $CommonNavKeys) }
     }
 }
@@ -807,11 +902,12 @@ function Get-MatrixOffset([int]$col, [int]$row) {
                     <!-- 右側: 配列切り替えピル型ボタングループ (広々とした右揃え) -->
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
                         <TextBlock Text="キーボード配列:" FontSize="12.5" FontWeight="Bold" Foreground="#1E293B" VerticalAlignment="Center" Margin="0,0,8,0"/>
-                        <ComboBox x:Name="CmbLayout" Width="240" Height="34" FontSize="12.5" FontWeight="SemiBold" VerticalContentAlignment="Center" Background="#FFFFFF" BorderBrush="#CBD5E1">
+                        <ComboBox x:Name="CmbLayout" Width="265" Height="34" FontSize="12.5" FontWeight="SemiBold" VerticalContentAlignment="Center" Background="#FFFFFF" BorderBrush="#CBD5E1">
                             <ComboBoxItem Content="🇯🇵 日本語 (JIS 88キー)" Tag="JIS" IsSelected="True"/>
                             <ComboBoxItem Content="🇬🇧 英語 (UK 84キー)" Tag="UK"/>
                             <ComboBoxItem Content="🇺🇸 英語 (US 83キー)" Tag="US"/>
                             <ComboBoxItem Content="🇫🇷 フランス語 (FR 84キー)" Tag="FR"/>
+                            <ComboBoxItem Content="🇨🇦 カナダ・フランス語 (CA 84キー)" Tag="CA"/>
                         </ComboBox>
                     </StackPanel>
                 </DockPanel>
@@ -821,7 +917,7 @@ function Get-MatrixOffset([int]$col, [int]$row) {
         <!-- メインタブ -->
         <TabControl x:Name="TabMain" Grid.Row="1" Background="Transparent" BorderThickness="0" Padding="0">
             <!-- タブ1: ビジュアル・キーボード編集 -->
-            <TabItem Header="  1. 通常キー入れ替え・無効化 (実機ビジュアル配列・4配列切替対応)  " FontSize="13" FontWeight="Bold">
+            <TabItem Header="  1. 通常キー入れ替え・無効化 (実機ビジュアル配列・5配列切替対応)  " FontSize="13" FontWeight="Bold">
                 <Grid Margin="0,8,0,0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
@@ -1316,6 +1412,7 @@ function Rebuild-PresetButtons() {
         "UK" { "🇬🇧 UK版向け定番プリセット:" }
         "US" { "🇺🇸 US版向け定番プリセット:" }
         "FR" { "🇫🇷 FR版向け定番プリセット:" }
+        "CA" { "🇨🇦 CA版向け定番プリセット:" }
         default { "🇯🇵 JIS版向け定番プリセット:" }
     }
     $headerTxt.FontSize = 12
@@ -1405,6 +1502,37 @@ function Rebuild-PresetButtons() {
         $presets += @{ Label="Fn+4(スリープ) 無効化"; Tip="作業中のスリープ誤爆を防止します"; Action={
             Disable-FnSleepKey
         }}
+        } elseif ($Global:ActiveLayout -eq "CA") {
+        $presets += @{ Label="Fn ⇔ 左Ctrl 入替"; Tip="左下のFnとCtrlを物理的・電気的に入れ替えます"; Action={
+            Swap-KeysById "Fn" "LCtrl"
+        }}
+        $presets += @{ Label="CapsLock ⇒ 左Ctrl"; Tip="CapsLockを左Ctrl化します"; Action={
+            Set-KeyById "Caps" 0x000000E0
+            Write-Log "プリセット適用: CapsLock ⇒ 左Ctrl"
+        }}
+        $presets += @{ Label="CapsLock ⇒ 半角/全角(IME切替)"; Tip="CapsLockで日本語IMEのON/OFFを切替"; Action={
+            Set-KeyById "Caps" 0x00000035
+            Write-Log "プリセット適用: CapsLock ⇒ 半角/全角"
+        }}
+        $presets += @{ Label="左Shift隣[Ù |] ⇒ 左Shift拡張"; Tip="短い左Shiftの右隣にある[Ù |]キーも左Shiftとして動作させます"; Action={
+            Set-KeyById "IsoUGrave" 0x000000E1
+            Write-Log "プリセット適用: [Ù |] ⇒ 左Shift"
+        }}
+        $presets += @{ Label="左Shift隣[Ù |] ⇒ JIS [ろ (＼ _)]"; Tip="WindowsがJIS認識時に反応しないISOキーをろに変換"; Action={
+            Set-KeyById "IsoUGrave" 0x00000087
+            Write-Log "プリセット適用: [Ù |] ⇒ JIS ろ"
+        }}
+        $presets += @{ Label="AltGr ⇒ 半角/全角(IME切替)"; Tip="右下のAltGrで日本語IMEのON/OFFを切替"; Action={
+            Set-KeyById "RAlt" 0x00000035
+            Write-Log "プリセット適用: AltGr ⇒ 半角/全角"
+        }}
+        $presets += @{ Label="PrtSc 無効化"; Tip="右下のPrtSc誤打防止"; Action={
+            Set-KeyById "PrtSc" 0x00000000
+            Write-Log "プリセット適用: PrtSc 無効化"
+        }}
+        $presets += @{ Label="Fn+4(スリープ) 無効化"; Tip="作業中のスリープ誤爆を防止します"; Action={
+            Disable-FnSleepKey
+        }}
     } else {
         # US配列
         $presets += @{ Label="Fn ⇔ 左Ctrl 入替"; Tip="左下のFnとCtrlを入れ替えます"; Action={
@@ -1471,7 +1599,7 @@ function Set-KeyCodeForDef($kDef, [uint32]$newCode) {
     }
 }
 
-# UK版実機キートップのビジュアル要素生成関数
+# 実機キートップのビジュアル要素生成関数 (JIS, UK, US, FR, CA 完全対応)
 function Build-KeycapVisual($k, [uint32]$currCode, [uint32]$origCode, [bool]$isSelected, [bool]$isSwapSrc) {
     $isModified = ($currCode -ne $origCode)
     $isDisabled = ($currCode -eq 0)
@@ -1482,7 +1610,7 @@ function Build-KeycapVisual($k, [uint32]$currCode, [uint32]$origCode, [bool]$isS
     $borderHex = "#3E4451"
     $borderThk = 1.2
     $fgMainHex = "#F8FAFC"
-    $fgSubHex  = "#CBD5E1"
+    $fgSubHex  = "#94A3B8"
 
     if ($isDisabled) {
         $bgHex     = "#451215"
@@ -1511,7 +1639,7 @@ function Build-KeycapVisual($k, [uint32]$currCode, [uint32]$origCode, [bool]$isS
 
         $W  = [double]$k.W
         $H  = [double]$k.H
-        $nw = if ($null -ne $k.NotchW) { [double]$k.NotchW } else { 14.0 }
+        $nw = if ($null -ne $k.NotchW) { [double]$k.NotchW } else { 16.0 }
         $nh = if ($null -ne $k.NotchH) { [double]$k.NotchH } else { 58.0 }
 
         $pathData = Get-EnterPathData $W $H $nw $nh
@@ -1523,7 +1651,6 @@ function Build-KeycapVisual($k, [uint32]$currCode, [uint32]$origCode, [bool]$isS
         $path.StrokeLineJoin = [System.Windows.Media.PenLineJoin]::Round
         $rootGrid.Children.Add($path) | Out-Null
 
-        # 刻印表示 (上段中央に配置)
         $lblStack = New-Object System.Windows.Controls.StackPanel
         $lblStack.HorizontalAlignment = "Center"
         $lblStack.VerticalAlignment   = "Top"
@@ -1536,8 +1663,7 @@ function Build-KeycapVisual($k, [uint32]$currCode, [uint32]$origCode, [bool]$isS
             $t1.FontWeight = "Bold"
             $lblStack.Margin = New-Object System.Windows.Thickness(0, 18, 0, 0)
         } else {
-            # "↵" など記号
-            $t1.FontSize = 19
+            $t1.FontSize = 18
             $t1.FontWeight = "Bold"
             $lblStack.Margin = New-Object System.Windows.Thickness(0, 11, 0, 0)
         }
@@ -1578,119 +1704,173 @@ function Build-KeycapVisual($k, [uint32]$currCode, [uint32]$origCode, [bool]$isS
     $bd.BorderBrush     = Get-Brush $borderHex
     $bd.BorderThickness = New-Object System.Windows.Thickness($borderThk)
     $bd.CornerRadius    = $corner
-    $bd.Padding         = New-Object System.Windows.Thickness(5, 3, 5, 3)
+    $bd.Padding         = New-Object System.Windows.Thickness(4, 2, 4, 2)
 
     $grid = New-Object System.Windows.Controls.Grid
+    $fontFam = New-Object System.Windows.Media.FontFamily("Segoe UI, BIZ UDPGothic, Consolas")
 
     if ($k.Type -eq "FnRow") {
-        if ($k.TL -ne "") {
-            # Esc (FnLock)
+        if ($k.TL -ne "" -and $null -ne $k.TL) {
             $tTL = New-Object System.Windows.Controls.TextBlock
-            $tTL.Text = $k.TL; $tTL.FontSize = 11; $tTL.FontWeight = "Bold"
+            $tTL.Text = $k.TL; $tTL.FontSize = 10.5; $tTL.FontWeight = "Bold"
             $tTL.Foreground = Get-Brush $fgMainHex
-            $tTL.HorizontalAlignment = "Left"; $tTL.VerticalAlignment = "Top"
+            $tTL.FontFamily = $fontFam
+            $tTL.HorizontalAlignment = "Center"; $tTL.VerticalAlignment = "Top"; $tTL.Margin = New-Object System.Windows.Thickness(0, 1, 0, 0)
             $grid.Children.Add($tTL) | Out-Null
 
             $tBL = New-Object System.Windows.Controls.TextBlock
             $tBL.Text = $k.BL; $tBL.FontSize = 8.5
             $tBL.Foreground = Get-Brush $fgSubHex
-            $tBL.HorizontalAlignment = "Left"; $tBL.VerticalAlignment = "Bottom"
+            $tBL.FontFamily = $fontFam
+            $tBL.HorizontalAlignment = "Center"; $tBL.VerticalAlignment = "Bottom"; $tBL.Margin = New-Object System.Windows.Thickness(0, 0, 0, 1)
             $grid.Children.Add($tBL) | Out-Null
         } else {
-            # F1..F12, Home, End, Delete
             $tIcon = New-Object System.Windows.Controls.TextBlock
             $tIcon.Text = $k.Icon
-            $tIcon.FontSize = $(if ($k.Sub -eq "") { 10.5 } else { 10 })
+            $tIcon.FontSize = if ($k.Sub -eq "") { 12 } else { 10.5 }
             $tIcon.Foreground = Get-Brush $fgMainHex
+            $tIcon.FontFamily = $fontFam
             $tIcon.HorizontalAlignment = "Center"
-            $tIcon.VerticalAlignment   = $(if ($k.Sub -eq "") { "Center" } else { "Top" })
+            $tIcon.VerticalAlignment   = if ($k.Sub -eq "") { "Center" } else { "Top" }
+            $tIcon.Margin = if ($k.Sub -eq "") { New-Object System.Windows.Thickness(0) } else { New-Object System.Windows.Thickness(0, 1, 0, 0) }
             $grid.Children.Add($tIcon) | Out-Null
 
             if ($k.Sub -ne "") {
                 $tSub = New-Object System.Windows.Controls.TextBlock
                 $tSub.Text = $k.Sub; $tSub.FontSize = 8.5
                 $tSub.Foreground = Get-Brush $fgSubHex
-                $tSub.HorizontalAlignment = "Center"; $tSub.VerticalAlignment = "Bottom"
+                $tSub.FontFamily = $fontFam
+                $tSub.HorizontalAlignment = "Center"; $tSub.VerticalAlignment = "Bottom"; $tSub.Margin = New-Object System.Windows.Thickness(0, 0, 0, 1)
                 $grid.Children.Add($tSub) | Out-Null
             }
         }
     } elseif ($k.Type -eq "Half") {
         $tC = New-Object System.Windows.Controls.TextBlock
-        $tC.Text = $k.Text; $tC.FontSize = 10.5; $tC.FontWeight = "Bold"
+        $tC.Text = $k.Text; $tC.FontSize = 11; $tC.FontWeight = "Bold"
         $tC.Foreground = Get-Brush $fgMainHex
+        $tC.FontFamily = $fontFam
         $tC.HorizontalAlignment = "Center"; $tC.VerticalAlignment = "Center"
         $grid.Children.Add($tC) | Out-Null
-    } elseif ($k.Type -eq "Mod") {
-        if ($k.TL -ne "") {
-            $tTL = New-Object System.Windows.Controls.TextBlock
-            $tTL.Text = $k.TL
-            $tTL.FontSize = $(if ($k.Id -eq "LShift") { 15 } elseif ($k.Id -eq "Tab") { 12 } else { 11.5 })
-            $tTL.Foreground = Get-Brush $fgMainHex
-            $tTL.HorizontalAlignment = "Left"
-            $tTL.VerticalAlignment   = $(if ($k.Id -eq "LShift" -or $k.Id -eq "Fn" -or $k.Id -eq "LCtrl" -or $k.Id -eq "LAlt" -or $k.Id -eq "RAlt" -or $k.Id -eq "RCtrl") { "Center" } else { "Top" })
-            $tTL.Margin = New-Object System.Windows.Thickness(3, 1, 0, 0)
-            $grid.Children.Add($tTL) | Out-Null
-        }
-        if ($k.TR -ne "") {
-            $tTR = New-Object System.Windows.Controls.TextBlock
-            $tTR.Text = $k.TR
-            $tTR.FontSize = $(if ($k.Id -eq "RShift" -or $k.Id -eq "BS") { 15 } else { 11.5 })
-            $tTR.Foreground = Get-Brush $fgMainHex
-            $tTR.HorizontalAlignment = "Right"
-            $tTR.VerticalAlignment   = $(if ($k.Id -eq "RShift") { "Center" } else { "Top" })
-            $tTR.Margin = New-Object System.Windows.Thickness(0, 1, 4, 0)
-            $grid.Children.Add($tTR) | Out-Null
-        }
-        if ($k.ML -ne "") {
-            $tML = New-Object System.Windows.Controls.TextBlock
-            $tML.Text = $k.ML
-            $tML.FontSize = $(if ($k.Id -eq "LWin") { 16 } elseif ($k.Id -eq "Tab") { 12 } else { 11.5 })
-            $tML.Foreground = Get-Brush $fgMainHex
-            $tML.HorizontalAlignment = $(if ($k.Id -eq "LWin") { "Center" } else { "Left" })
-            $tML.VerticalAlignment   = $(if ($k.Id -eq "Tab") { "Bottom" } else { "Center" })
-            $tML.Margin = New-Object System.Windows.Thickness(3, 0, 0, 2)
-            $grid.Children.Add($tML) | Out-Null
-        }
-        if ($k.BL -ne "") {
-            $tBL = New-Object System.Windows.Controls.TextBlock
-            $tBL.Text = $k.BL
-            $tBL.FontSize = 10.5
-            $tBL.Foreground = Get-Brush $fgSubHex
-            $tBL.HorizontalAlignment = $(if ($k.Id -eq "PrtSc") { "Center" } else { "Left" })
-            $tBL.VerticalAlignment = "Bottom"
-            $tBL.Margin = New-Object System.Windows.Thickness(3, 0, 0, 1)
-            $grid.Children.Add($tBL) | Out-Null
-        }
     } else {
-        # 標準UKキー (アルファベットは左上大文字、数字/記号は上下2段＋右下ユーロ記号等)
-        if ($k.TL -ne "") {
-            $tTL = New-Object System.Windows.Controls.TextBlock
-            $tTL.Text = $k.TL
-            $tTL.FontSize = $(if ($k.BL -ne "" -and $k.BL -ne "_") { 11.5 } else { 14.5 })
-            $tTL.FontWeight = "Bold"
-            $tTL.Foreground = Get-Brush $fgMainHex
-            $tTL.HorizontalAlignment = "Left"; $tTL.VerticalAlignment = "Top"
-            $tTL.Margin = $(if ($k.Id -eq "B") { New-Object System.Windows.Thickness(6, 15, 0, 0) } else { New-Object System.Windows.Thickness(3, 1, 0, 0) })
-            $grid.Children.Add($tTL) | Out-Null
+        # 1. 単独中央文字 (È, À, Q, W, T, U, I, G, H, J, K, L, V, N, Modキーなど)
+        if ($k.Text -ne "" -and $null -ne $k.Text) {
+            $tC = New-Object System.Windows.Controls.TextBlock
+            $tC.Text = $k.Text; $tC.FontSize = if ($k.Text.Length -eq 1) { 15 } else { 12.5 }
+            $tC.FontWeight = "Bold"; $tC.Foreground = Get-Brush $fgMainHex
+            $tC.FontFamily = $fontFam
+            $tC.HorizontalAlignment = "Center"; $tC.VerticalAlignment = "Center"
+            $grid.Children.Add($tC) | Out-Null
         }
-        if ($k.BL -ne "") {
-            $tBL = New-Object System.Windows.Controls.TextBlock
-            $tBL.Text = $k.BL
-            $tBL.FontSize = $(if ($k.BL -eq "_") { 12 } else { 13.5 })
-            $tBL.FontWeight = "Bold"
-            $tBL.Foreground = Get-Brush $fgMainHex
-            $tBL.HorizontalAlignment = $(if ($k.BL -eq "_") { "Center" } else { "Left" })
-            $tBL.VerticalAlignment = "Bottom"
-            $tBL.Margin = New-Object System.Windows.Thickness(3, 0, 0, 1)
-            $grid.Children.Add($tBL) | Out-Null
+        # 2. 左右並び (例: Ù ')
+        elseif ($k.LeftText -ne "" -and $null -ne $k.LeftText) {
+            $tL = New-Object System.Windows.Controls.TextBlock
+            $tL.Text = $k.LeftText; $tL.FontSize = 14.5; $tL.FontWeight = "Bold"; $tL.Foreground = Get-Brush $fgMainHex
+            $tL.FontFamily = $fontFam
+            $tL.HorizontalAlignment = "Left"; $tL.VerticalAlignment = "Center"; $tL.Margin = New-Object System.Windows.Thickness(8, 0, 0, 0)
+            $grid.Children.Add($tL) | Out-Null
+
+            $tR = New-Object System.Windows.Controls.TextBlock
+            $tR.Text = $k.RightText; $tR.FontSize = 14; $tR.FontWeight = "Bold"; $tR.Foreground = Get-Brush $fgMainHex
+            $tR.FontFamily = $fontFam
+            $tR.HorizontalAlignment = "Right"; $tR.VerticalAlignment = "Center"; $tR.Margin = New-Object System.Windows.Thickness(0, 0, 10, 0)
+            $grid.Children.Add($tR) | Out-Null
         }
-        if ($k.BR -ne "") {
-            $tBR = New-Object System.Windows.Controls.TextBlock
-            $tBR.Text = $k.BR; $tBR.FontSize = 11.5; $tBR.FontWeight = "Bold"
-            $tBR.Foreground = Get-Brush $fgSubHex
-            $tBR.HorizontalAlignment = "Right"; $tBR.VerticalAlignment = "Bottom"
-            $tBR.Margin = New-Object System.Windows.Thickness(0, 0, 3, 1)
-            $grid.Children.Add($tBR) | Out-Null
+        # 3. 上下並び (例: Z / «, X / », É / ´)
+        elseif ($k.TopText -ne "" -and $null -ne $k.TopText) {
+            $tT = New-Object System.Windows.Controls.TextBlock
+            $tT.Text = $k.TopText; $tT.FontSize = 14; $tT.FontWeight = "Bold"; $tT.Foreground = Get-Brush $fgMainHex
+            $tT.FontFamily = $fontFam
+            $tT.HorizontalAlignment = "Center"; $tT.VerticalAlignment = "Top"; $tT.Margin = New-Object System.Windows.Thickness(0, 4, 0, 0)
+            $grid.Children.Add($tT) | Out-Null
+
+            $tB = New-Object System.Windows.Controls.TextBlock
+            $tB.Text = $k.BottomText; $tB.FontSize = 13.5; $tB.FontWeight = "Bold"; $tB.Foreground = Get-Brush $fgSubHex
+            $tB.FontFamily = $fontFam
+            $tB.HorizontalAlignment = "Center"; $tB.VerticalAlignment = "Bottom"; $tB.Margin = New-Object System.Windows.Thickness(0, 0, 0, 4)
+            $grid.Children.Add($tB) | Out-Null
+        }
+        # 4. 複数隅・複合キー
+        else {
+            # 左列縦3段スタック
+            if ($k.LeftList -and $k.LeftList.Count -gt 0) {
+                $spL = New-Object System.Windows.Controls.StackPanel
+                $spL.HorizontalAlignment = "Left"; $spL.VerticalAlignment = "Center"
+                $spL.Margin = New-Object System.Windows.Thickness(4, 0, 0, 0)
+                foreach ($item in $k.LeftList) {
+                    $tb = New-Object System.Windows.Controls.TextBlock
+                    $tb.Text = $item; $tb.FontSize = 11; $tb.FontWeight = "Bold"; $tb.Foreground = Get-Brush $fgMainHex
+                    $tb.FontFamily = $fontFam
+                    $tb.HorizontalAlignment = "Center"; $tb.LineHeight = 12
+                    $spL.Children.Add($tb) | Out-Null
+                }
+                $grid.Children.Add($spL) | Out-Null
+            } else {
+                if ($k.TL -ne "" -and $null -ne $k.TL) {
+                    $tTL = New-Object System.Windows.Controls.TextBlock
+                    $tTL.Text = $k.TL; $tTL.FontSize = if ($k.BL -ne "") { 11.5 } else { 14.5 }
+                    $tTL.FontWeight = "Bold"; $tTL.Foreground = Get-Brush $fgMainHex
+                    $tTL.FontFamily = $fontFam
+                    $tTL.HorizontalAlignment = "Left"; $tTL.VerticalAlignment = "Top"
+                    $tTL.Margin = if ($k.Id -eq "B") { New-Object System.Windows.Thickness(6, 15, 0, 0) } else { New-Object System.Windows.Thickness(3, 1, 0, 0) }
+                    $grid.Children.Add($tTL) | Out-Null
+                }
+                if ($k.ML -ne "" -and $null -ne $k.ML) {
+                    $tML = New-Object System.Windows.Controls.TextBlock
+                    $tML.Text = $k.ML; $tML.FontSize = 12.5; $tML.FontWeight = "Bold"; $tML.Foreground = Get-Brush $fgMainHex
+                    $tML.FontFamily = $fontFam
+                    $tML.HorizontalAlignment = "Left"; $tML.VerticalAlignment = "Center"
+                    $tML.Margin = New-Object System.Windows.Thickness(3, 0, 0, 0)
+                    $grid.Children.Add($tML) | Out-Null
+                }
+                if ($k.BL -ne "" -and $null -ne $k.BL) {
+                    $tBL = New-Object System.Windows.Controls.TextBlock
+                    $tBL.Text = $k.BL; $tBL.FontSize = 12.5; $tBL.FontWeight = "Bold"; $tBL.Foreground = Get-Brush $fgMainHex
+                    $tBL.FontFamily = $fontFam
+                    $tBL.HorizontalAlignment = "Left"; $tBL.VerticalAlignment = "Bottom"
+                    $tBL.Margin = New-Object System.Windows.Thickness(3, 0, 0, 1)
+                    $grid.Children.Add($tBL) | Out-Null
+                }
+            }
+
+            # 右列縦3段スタック
+            if ($k.RightList -and $k.RightList.Count -gt 0) {
+                $spR = New-Object System.Windows.Controls.StackPanel
+                $spR.HorizontalAlignment = "Right"; $spR.VerticalAlignment = "Center"
+                $spR.Margin = New-Object System.Windows.Thickness(0, 0, 4, 0)
+                foreach ($item in $k.RightList) {
+                    $tb = New-Object System.Windows.Controls.TextBlock
+                    $tb.Text = $item; $tb.FontSize = 11; $tb.FontWeight = "Bold"; $tb.Foreground = Get-Brush $fgSubHex
+                    $tb.FontFamily = $fontFam
+                    $tb.HorizontalAlignment = "Center"; $tb.LineHeight = 12
+                    $spR.Children.Add($tb) | Out-Null
+                }
+                $grid.Children.Add($spR) | Out-Null
+            } else {
+                if ($k.TR -ne "" -and $null -ne $k.TR) {
+                    $tTR = New-Object System.Windows.Controls.TextBlock
+                    $tTR.Text = $k.TR; $tTR.FontSize = 11.5; $tTR.FontWeight = "Bold"; $tTR.Foreground = Get-Brush $fgSubHex
+                    $tTR.FontFamily = $fontFam
+                    $tTR.HorizontalAlignment = "Right"; $tTR.VerticalAlignment = "Top"
+                    $tTR.Margin = New-Object System.Windows.Thickness(0, 1, 3, 0)
+                    $grid.Children.Add($tTR) | Out-Null
+                }
+                if ($k.MR -ne "" -and $null -ne $k.MR) {
+                    $tMR = New-Object System.Windows.Controls.TextBlock
+                    $tMR.Text = $k.MR; $tMR.FontSize = 11.5; $tMR.FontWeight = "Bold"; $tMR.Foreground = Get-Brush $fgSubHex
+                    $tMR.FontFamily = $fontFam
+                    $tMR.HorizontalAlignment = "Right"; $tMR.VerticalAlignment = "Center"
+                    $tMR.Margin = New-Object System.Windows.Thickness(0, 0, 3, 0)
+                    $grid.Children.Add($tMR) | Out-Null
+                }
+                if ($k.BR -ne "" -and $null -ne $k.BR) {
+                    $tBR = New-Object System.Windows.Controls.TextBlock
+                    $tBR.Text = $k.BR; $tBR.FontSize = 11; $tBR.FontWeight = "Bold"; $tBR.Foreground = Get-Brush $fgSubHex
+                    $tBR.FontFamily = $fontFam
+                    $tBR.HorizontalAlignment = "Right"; $tBR.VerticalAlignment = "Bottom"
+                    $tBR.Margin = New-Object System.Windows.Thickness(0, 0, 3, 1)
+                    $grid.Children.Add($tBR) | Out-Null
+                }
+            }
         }
     }
 
@@ -1860,6 +2040,7 @@ function Switch-KeyboardLayout([string]$layoutName) {
         "UK" { 1 }
         "US" { 2 }
         "FR" { 3 }
+        "CA" { 4 }
         default { 0 }
     }
     if ($CmbLayout -and $CmbLayout.SelectedIndex -ne $targetIndex) {
@@ -1878,6 +2059,10 @@ function Switch-KeyboardLayout([string]$layoutName) {
         "FR" {
             if ($TxtKeyboardTitle) { $TxtKeyboardTitle.Text = "フランス語 (FR / AZERTY 84キー) 配列（クリックして選択/入替）" }
             Write-Log "キーボードレイアウトを【🇫🇷 フランス語 FR / AZERTY (84キー)】に切り替えました。"
+        }
+        "CA" {
+            if ($TxtKeyboardTitle) { $TxtKeyboardTitle.Text = "カナダ・フランス語 (CA / QWERTY 84キー) 配列（クリックして選択/入替）" }
+            Write-Log "キーボードレイアウトを【🇨🇦 カナダ・フランス語 CA / QWERTY (84キー)】に切り替えました。"
         }
         default {
             if ($TxtKeyboardTitle) { $TxtKeyboardTitle.Text = "日本語 (JIS 88キー) 配列（クリックして選択/入替）" }

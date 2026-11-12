@@ -7,6 +7,8 @@ $RECYCLE.BIN/
 # Logs & Temporary files
 *.log
 *.tmp
+*.zip
+README.txt
 
 # Lenovo Official Firmware & Flash Tools (Proprietary / Do not distribute)
 KB-ISP.exe
